@@ -17,6 +17,7 @@
               g.translate(MAX_WIDTH/2, MAX_HEIGHT/2);
               initGraph();
             }
+
             function initGraph() {
               var g = getCanvasContext();
               g.strokeStyle = 'black';
@@ -31,6 +32,7 @@
                 g.stroke();
               }
             }
+
             function draw() {
               initGraph();
               var maxX = Number(document.getElementById('maxX').value);
@@ -56,6 +58,34 @@
                 g.stroke();
               }
             }
+
+            function drawagain(){
+             
+              var maxX = Number(document.getElementById('maxX').value);
+              var maxY = Number(document.getElementById('maxY').value);
+              var halfStep = Number(document.getElementById('halfStep').value);
+              var g = getCanvasContext();
+              if (g) {
+                var x, y;
+                var sx, sy;
+                var currStep;
+                sx = -MAX_WIDTH/2
+                sy = -MAX_HEIGHT/2 * calculateY(-maxX) / maxY;
+                g.beginPath();
+                g.moveTo(sx, sy);
+                for (currStep=-halfStep + 1; currStep<=halfStep; currStep++) {
+                  x = maxX * currStep / halfStep;
+                  y = calculateY(x);
+                  sx = MAX_WIDTH/2 * x / maxX;
+                  sy = -MAX_HEIGHT/2 * y / maxY;
+                  g.lineTo(sx, sy);
+                }
+                g.strokeStyle = 'red';
+                g.stroke();
+              }
+
+            }
+
             function calculateY(x) {
               var a = Number(document.getElementById('a').value);
               var b = Number(document.getElementById('b').value);
@@ -72,6 +102,21 @@
                 return null;
               }
             }
+
+
+
+            function reset(){
+              initGraph();
+              document.getElementById('a').value='';
+              document.getElementById('b').value='';
+              document.getElementById('c').value='';
+              document.getElementById('maxX').value='';
+              document.getElementById('maxY').value='';
+              document.getElementById('halfStep').value='';
+            var y = a * x * x + b * x + c;
+              return y;
+            }
+
           </script>
     <title>first_app</title>
     <meta charset="utf-8">
@@ -110,7 +155,9 @@
         <td><input type="text" id="halfStep" value="20"/></td>
       </tr>
       <tr>
-        <td colspan="2"><button name="btnDraw" type="button" onClick="draw()">Draw</button></td>
+        <td colspan="1"><button name="btnDraw" type="button" onClick="draw()">Draw</button></td>
+        <td colspan="1"><button name="btnDraw2" type="button" onClick="drawagain()">Drawagain</button></td>
+        <td colspan="1"><button name="reset" type="button" onClick="reset()">reset</button></td>
       </tr>
     </table>
   
