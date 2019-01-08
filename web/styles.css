@@ -1,12 +1,33 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/css?family=Material+Icons);
 
+
+
+
 body {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 5vw;
+  background-color: rgb(68, 68, 67);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.2em;
+  margin: 15px;
+}
+h1 {
+  color: rgb(231, 164, 19);
+  font-family: 'Open Sans', sans-serif;
+ font-size: 40px;
+ font-weight: normal;
 }
 
-* {
-  font-family: Roboto, Helvetica, Arial, sans-serif;
+div {
+  background-color: rgb(252, 249, 249);
+  width: 800px;
+  height: 700px;
+  border-style:outset;
+  margin-top: 100px;
+  margin: auto;    
+}
+right {
+  position: relative;
+  right: 0px;
 }
