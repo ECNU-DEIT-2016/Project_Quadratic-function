@@ -12,8 +12,9 @@ dependencies:
   angular_components: ^0.9.0
   stagexl: ^1.4.0+2
   angular_router: ^2.0.0-alpha+16
-
-  
+  sqljocky5: ^2.2.0
+  aqueduct: ^3.0.0
+  http: ^0.12.0
    
 
 dev_dependencies:

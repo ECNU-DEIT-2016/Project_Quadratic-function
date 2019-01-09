@@ -5,7 +5,7 @@ import 'package:angular_components/angular_components.dart';
 import 'print_service.dart';
 
 @Component(
-  selector: 'canvas-print',
+  selector: 'print',
   styleUrls: ['print_component.css'],
   templateUrl: 'print_component.html',
   directives: [

@@ -1,0 +1,22 @@
+<div id="content">
+    <h4 style="text-align: center; margin-bottom: 10px; margin-top: 10px">新用户注册</h4>
+    <form>
+            <material-input label="用户名"
+                            [(ngModel)]="username">
+            </material-input>
+            <material-input label="密码"
+                            type="password"
+                            [(ngModel)]="password">
+            </material-input>
+
+        
+
+        
+        <!--<div>-->
+            <!--<a (click)="register()" class="col-1-4">注册</a>-->
+        <!--</div>-->
+        <div class="mybutton">
+            <material-button raised class="blue" (click)="register()">注册</material-button>
+        </div>
+    </form>
+</div>

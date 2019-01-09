@@ -1,0 +1,27 @@
+<!--<div>-->
+    <!--<img src="../../../GreatDays.png">-->
+<!--</div>-->
+
+<div id="content">
+    <form>
+        <div class="login-input-box">
+            <material-input label="Your Username"
+                            class="login-input-box"
+                            [(ngModel)]="username">
+            </material-input>
+        </div>
+        <div class="login-input-box">
+            <material-input label="Your Password"
+                            class="login-input-box"
+                            type="password"
+                            [(ngModel)]="password">
+            </material-input>
+        </div>
+        <div class="mybutton">
+            <material-button raised class="blue" (click)="gotoPrint()">登录</material-button>
+        </div>
+        <div style="margin-top: -5px">
+            <material-button flat class="grey" (click)="gotoRegister()">去注册</material-button>
+        </div>
+    </form>
+</div>
