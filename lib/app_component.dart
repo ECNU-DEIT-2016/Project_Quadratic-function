@@ -1,17 +1,29 @@
 import 'package:angular/angular.dart';
+import 'package:angular_router/angular_router.dart';
 
-
-import 'src/basic_list/basic_component.dart';
-
+import 'src/routes.dart';
+import 'src/hero/hero_service.dart';
 // AngularDart info: https://webdev.dartlang.org/angular
 // Components info: https://webdev.dartlang.org/components
 
+
+
+
 @Component(
   selector: 'my-app',
-  styleUrls: ['app_component.css'],
-  templateUrl: 'app_component.html',
-  directives: [BasicComponent],
+  template: '''
+    <h1>二次函数</h1>
+    <nav>
+      <a [routerLink]="RoutePaths.heroes.toUrl()"
+         [routerLinkActive]="'active-route'">Home</a>
+    </nav>
+    <router-outlet [routes]="Routes.all"></router-outlet>
+  ''',
+  styles: ['.active-route {color: #039be5}'],
+  directives: [routerDirectives],
+  providers: [ClassProvider(HeroService)],
+  exports: [RoutePaths, Routes],
 )
 class AppComponent {
-  // Nothing here yet. All logic is in TodoListComponent.
+
 }

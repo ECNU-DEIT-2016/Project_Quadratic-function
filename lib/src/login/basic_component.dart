@@ -1,11 +1,10 @@
 
-import 'dart:html' ;
 import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
 
 import 'basic_service.dart';
-import 'package:stagexl/stagexl.dart';
 
+import 'package:angular_router/angular_router.dart';
 
 @Component(
   selector: 'basic-print',

@@ -1,0 +1,34 @@
+<div *ngIf="hero != null">
+  <h2>{{hero.name}}</h2>
+  <p>对于二次函数来说，其表示方法一般有三种，即数表法、图像法、关系式法，这三种表示方法彼此之间不但有联系，而且在某些情况下还可以互相转化.</p>
+  <h2>关系式法：</h2>
+  <P>用关系式表示二次函数时，一般表示为 y=ax^​2+bx+c (a,b,c 为常数，a≠0) 的形式，这个式子也叫作二次函数的解析式或表达式．</P>
+  <h2>数表法：</h2>
+  <table>
+    <tr>
+      <th>x</th>
+      <th>…</th>
+      <th>-3</th>
+      <th>-2</th>
+      <th>-1</th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>…</th>
+    </tr>
+    <tr>
+      <th>y=x^2-2x</th>
+      <th>…</th>
+      <th>15</th>
+      <th>8</th>
+      <th>3</th>
+      <th>0</th>
+      <th>-1</th>
+      <th>0</th>
+      <th>3</th>
+      <th>…</th>
+    </tr>
+  </table>
+  <button (click)="goBack()">Back</button>
+</div>
