@@ -8,7 +8,7 @@ li {
 }
 
 li:hover {
-  background-color: #EEEEEE;
+  background-color: rgb(247, 247, 247);
 }
 
 li material-checkbox {
