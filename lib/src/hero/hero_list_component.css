@@ -47,7 +47,11 @@
 }
 button {
   font-family: Arial;
+<<<<<<< HEAD
+  background-color: rgb(241, 237, 237);
+=======
   background-color: rgb(130, 149, 231);
+>>>>>>> 6fb0a5ed4ecf75f866a70f4e18bdcc96c0875f6f
   border: none;
   padding: 5px 10px;
   border-radius: 4px;

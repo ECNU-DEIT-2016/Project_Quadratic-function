@@ -6,7 +6,7 @@ import 'main.template.dart' as self;
 
 const useHashLS = false;
 @GenerateInjector(
-  routerProvidersHash, // You can use routerProviders in production
+  routerProvidersHash,// You can use routerProviders in production
 )
 final InjectorFactory injector = self.injector$Injector;
 
