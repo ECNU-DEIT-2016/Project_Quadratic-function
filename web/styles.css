@@ -135,18 +135,19 @@ h1 {
 .box {
   background-color: rgb(233, 231, 231);
   width: 700px;
-  height: 800px;
+  height: 1000px;
   position: absolute;
   right:0px;
   border:5px solid gray;
   padding: 10px;
+  margin-right: 20px;
   margin:0px;
 }
 div.ex
 {
 background-color: rgb(233, 231, 231);
 width:600px;
-height: 800px;
+height: 1000px;
 padding:10px;
 border:5px solid gray;
 margin:0px;
