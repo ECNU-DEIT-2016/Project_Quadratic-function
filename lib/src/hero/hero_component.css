@@ -34,3 +34,15 @@ table{
 table,td,th {
   border: 1px solid black;
 }
+
+div.a{
+  background-color: rgb(214, 216, 216);
+  width:500px;
+  height: 150px;
+  padding:10px;
+  
+  margin:0px;
+  }
+ul.b {
+  list-style-type:square;
+}
