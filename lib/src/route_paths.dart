@@ -3,9 +3,9 @@ import 'package:angular_router/angular_router.dart';
 const idParam = 'id';
 
 class RoutePaths {
-  static final heroes = RoutePath(path: 'heroes');
+  //static final heroes = RoutePath(path: 'heroes');
   //static final hero1 = RoutePath(path: 'hero1');
-  static final hero = RoutePath(path: '${heroes.path}/:$idParam');
+ // static final hero = RoutePath(path: '${heroes.path}/:$idParam');
   //static final heroes = RoutePath(path: 'heroes');
   
   //static final hero = RoutePath(path: '${heroes.path}/:$idParam');
