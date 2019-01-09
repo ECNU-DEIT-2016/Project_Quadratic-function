@@ -1,5 +1,9 @@
 import 'package:angular/angular.dart';
 import 'package:angular_router/angular_router.dart';
+<<<<<<< HEAD
+=======
+import 'src/canvas_print/print_component.dart';
+>>>>>>> a895f80a2a3d05657332d9925ae2ebf5a663dd03
 import 'src/routes.dart';
 import 'src/hero/hero_service.dart';
 import 'src/register/register_form_component.dart';

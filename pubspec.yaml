@@ -12,9 +12,12 @@ dependencies:
   angular_components: ^0.9.0
   stagexl: ^1.4.0+2
   angular_router: ^2.0.0-alpha+16
+<<<<<<< HEAD
   angular_forms: ^2.0.0
   
    
+=======
+>>>>>>> a895f80a2a3d05657332d9925ae2ebf5a663dd03
 
 dev_dependencies:
   angular_test: ^2.0.0
