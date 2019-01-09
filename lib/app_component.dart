@@ -1,6 +1,6 @@
 import 'package:angular/angular.dart';
 import 'package:angular_router/angular_router.dart';
-
+import 'src/canvas_print/print_component.dart';
 import 'src/routes.dart';
 import 'src/hero/hero_service.dart';
 // AngularDart info: https://webdev.dartlang.org/angular
@@ -20,7 +20,7 @@ import 'src/hero/hero_service.dart';
     <router-outlet [routes]="Routes.all"></router-outlet>
   ''',
   styles: ['.active-route {color: #039be5}'],
-  directives: [routerDirectives],
+  directives: [routerDirectives,PrintComponent],
   providers: [ClassProvider(HeroService)],
   exports: [RoutePaths, Routes],
 )
