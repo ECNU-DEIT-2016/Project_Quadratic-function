@@ -2,7 +2,6 @@ import 'dart:async';
 
 import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
-
 import 'print_service.dart';
 
 @Component(
