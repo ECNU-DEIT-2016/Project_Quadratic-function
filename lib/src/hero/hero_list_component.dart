@@ -14,6 +14,7 @@ import 'hero_service.dart';
   directives: [coreDirectives],
 )
 class HeroListComponent implements OnActivate {
+
   final HeroService _heroService;
   final Router _router;
   List<Hero> heroes;
