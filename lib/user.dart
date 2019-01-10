@@ -67,44 +67,6 @@ class User extends Serializable {
   }
 
 
-  /*static Future<String> sendEmail(String code, String mailbox) async {
-
-    String stmpusername = "10164507121@stu.ecnu.edu.cn";
-    String stmpassword = "Qxy071561";
-    print(mailbox);
-    String ifsend = "n";
-    List<String> tos = [mailbox]; //收件人
-
-    //if tos is Empty, send myself
-    if (tos.isEmpty)
-      tos.add(stmpusername);
-
-    final smtpServer = ecnustumail(stmpusername, stmpassword);
-    Iterable<Address> toAd(Iterable<String> addresses) =>
-        (addresses ?? <String>[]).map((a) => new Address(a));
-
-    final message = new Message()
-      ..from = new Address('10164507121@stu.ecnu.edu.cn')
-      ..recipients.addAll(toAd(tos))
-      ..subject = 'Test Dart Mailer library :: 😀 :: ${new DateTime.now()}'
-      ..text = 'This is the plain text.\nThis is line 2 of the text part.'
-      ..html = "<h1>Hey! Here's your identity code:</h1>"+code;
-
-    final sendReports = await send(message, smtpServer);
-    sendReports.forEach((sr) {
-      if (sr.sent) {
-        print('Message sent');
-        ifsend = "y";
-      }
-      else {
-        print('Message not sent.');
-        for (var p in sr.validationProblems) {
-          print('Problem: ${p.code}: ${p.msg}');
-        }
-      }
-    });
-    return ifsend;
-  }*/
 
   @override
   void readFromMap(Map<String, dynamic> map) {

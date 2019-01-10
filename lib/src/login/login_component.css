@@ -3,7 +3,7 @@
     width: 420px;
     height: 300px;
     border-radius: 6px;
-    box-shadow:0 0 9px #c7ddef;
+   
     padding: 15px;
     margin-top: 15%;
     margin-left: auto;
@@ -14,7 +14,7 @@
 
 /* Make #myButton green with yellow icon */
 .blue {
-    background: mediumslateblue;
+    background: rgb(76, 75, 77);
     color: white;
     width: 80%;
     margin-bottom: 10px;

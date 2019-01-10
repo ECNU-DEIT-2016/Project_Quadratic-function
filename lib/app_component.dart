@@ -4,7 +4,8 @@ import 'package:angular_router/angular_router.dart';
 import 'package:Project_Quadratic_function/src/routes.dart';
 import 'package:Project_Quadratic_function/src/route_paths.dart';
 import 'src/print/print_component.dart';
-//import 'src/hero/hero_component.dart';
+import 'src/matha/matha_component.dart';
+
 import 'src/login/login_component.dart';
 // AngularDart info: https://webdev.dartlang.org/angular
 // Components info: https://webdev.dartlang.org/components
@@ -26,7 +27,7 @@ import 'src/login/login_component.dart';
     , app_component.html
   ''',*/
   //styles: ['.active-route {color: #039be5}'],
-  directives: [PrintComponent,routerDirectives,LoginComponent],
+  directives: [MathaComponent,PrintComponent,routerDirectives,LoginComponent],
  
  
   exports: [RoutePaths, Routes],

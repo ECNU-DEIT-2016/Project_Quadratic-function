@@ -10,6 +10,7 @@ class RoutePaths {
   
   //static final hero = RoutePath(path: '${heroes.path}/:$idParam');
   static final print = RoutePath(path: 'print');
+  static final matha = RoutePath(path: 'matha');
   static final login =RoutePath(path: 'login');
   static final register =RoutePath(path:'register');
   static final print_test=RoutePath(path: '${print.path}/:$idParam');

@@ -75,38 +75,5 @@ class RegisterController extends ResourceController{
 
 }
 
-/*class SendEmailController extends ResourceController{
-
-  @Operation.post()
-  Future<Response> register(@Bind.body() User testuser) async {
-    String identify_Code = testuser.identify_code;
-    String mailbox = testuser.mailbox;
-    var ifsend = "y";
-    ifsend = await User.sendEmail(identify_Code, mailbox);
-    print(ifsend);
-    if(ifsend == "y"){
-      return Response.ok({"success":"send success"});
-    }
-    else return Response.badRequest(body: {"error": "send failed"});
-  }
-
-}
-
-class SendDeadEmailController extends ResourceController{
-
-  @Operation.post()
-  Future<Response> register(@Bind.body() Plan testplan) async {
-    String mailbox= testplan.mailbox;
-    String deadline = testplan.deadline;
-    var ifsend = "y";
-    ifsend = await Plan.sendEmail(mailbox, deadline);
-    print(ifsend);
-    if(ifsend == "y"){
-      return Response.ok({"success":"send success"});
-    }
-    else return Response.badRequest(body: {"error": "send failed"});
-  }
-
-}*/
 
 

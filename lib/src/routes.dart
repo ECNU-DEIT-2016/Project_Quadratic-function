@@ -1,5 +1,6 @@
 import 'package:angular_router/angular_router.dart';
 import 'print/print_component.template.dart' as print_component;
+import 'matha/matha_component.template.dart' as matha_component;
 import 'login/login_component.template.dart' as login_component;
 import 'register/register_component.template.dart' as register_component;
 //import 'hero/hero_list_component.template.dart' as hero_list_template;
@@ -23,7 +24,10 @@ class Routes {
     routePath: RoutePaths.print,
     component: print_component.PrintComponentNgFactory,
   );
-  
+   static final matha = RouteDefinition(
+    routePath: RoutePaths.matha,
+    component: matha_component.MathaComponentNgFactory,
+  );
   
   static final login = RouteDefinition(
     routePath: RoutePaths.login,
@@ -42,6 +46,7 @@ class Routes {
     login,
     register,
     print,
+    matha,
     print_test,
     //heroes,
     //hero,
