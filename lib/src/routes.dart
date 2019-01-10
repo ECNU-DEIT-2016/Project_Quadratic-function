@@ -42,6 +42,7 @@ class Routes {
     routePath: RoutePaths.print_test,
     component: print_component.PrintComponentNgFactory,
   );
+  
   static final all = <RouteDefinition>[
     login,
     register,
