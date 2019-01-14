@@ -17,16 +17,7 @@ import 'src/login/login_component.dart';
   selector: 'my-app',
   styleUrls: ['app_component.css'],
   templateUrl: 'app_component.html',
-  /*template: '''
-    <h1>二次函数</h1>
-    <nav>
-      <a [routerLink]="RoutePaths.heroes.toUrl()"
-         [routerLinkActive]="'active-route'">Home</a>
-    </nav>
-    <router-outlet [routes]="Routes.all"></router-outlet>
-    , app_component.html
-  ''',*/
-  //styles: ['.active-route {color: #039be5}'],
+
   directives: [MathaComponent,PrintComponent,routerDirectives,LoginComponent],
  
  
