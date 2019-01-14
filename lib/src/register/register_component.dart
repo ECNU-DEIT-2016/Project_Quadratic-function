@@ -44,7 +44,7 @@ class RegisterComponent {
     model.alterEgo = '';
   }
       Future<NavigationResult> sureRegister() =>
-      _router.navigate(RoutePaths.print.toUrl());
+      _router.navigate(RoutePaths.login.toUrl());
 
 
 }
@@ -52,6 +52,6 @@ class RegisterComponent {
 User skyDog() {
   var myUser =
       User(42, 'SkyDog', 'Fetch any object at any distance', 'Leslie Rollover');
-  print('My Username is ${myUser.name}.'); // "My hero is SkyDog."
+  print('My Username is ${myUser.name}.'); 
   return myUser;
 }
